@@ -1,0 +1,99 @@
+!-------------------------------------------------------------------------------
+! Xft settings
+!-------------------------------------------------------------------------------
+
+Xft.dpi:                    96
+Xft.antialias:              false
+Xft.rgba:                   rgb
+Xft.hinting:                true
+Xft.hintstyle:              hintslight
+
+URxvt.depth:                32
+#URxvt.background:	    [80]#2e3436
+URxvt.geometry:             88x22
+URxvt.transparent:          false
+URxvt.fading:               0
+! URxvt.urgentOnBell:         true
+! URxvt.visualBell:           true
+URxvt.loginShell:           true
+URxvt.saveLines:            9999
+URxvt.internalBorder:       3
+URxvt.lineSpace:            0
+
+! Fonts
+URxvt.allow_bold:           false
+/* URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
+URxvt*font: xft:Inconsolata:pixelsize=13:Bold
+!URxvt*boldFont: xft:Monospace:pixelsize=14
+
+! Fix font space
+URxvt*letterSpace: -1
+
+! Scrollbar
+URxvt.scrollStyle:          rxvt
+URxvt.scrollBar:            false
+
+! Perl extensions
+URxvt.perl-ext-common:      default,matcher,resize-font,url-select,keyboard-select,xresources-256
+URxvt.matcher.button:       1
+URxvt.urlLauncher:          icecat
+
+! url-select
+URxvt.keysym.M-u:	    perl:url-select:select_next
+URxvt.url-select.launcher:  icecat
+URxvt.url-select.underline: true
+
+! keyboard-select
+URxvt.keysym.M-Escape:	    perl:keyboard-select:activate
+
+! resize-font
+URxvt.resize-font.smaller:  C-m
+URxvt.resize-font.bigger:   C-p
+
+! Cursor
+URxvt.cursorBlink:          true
+URxvt.cursorColor:          #ad7fa8
+URxvt.cursorUnderline:      false
+
+! Pointer
+URxvt.pointerBlank:         true
+
+*background:            #2e3436
+*foreground:            #eeeeec
+*fading:		40
+*fadeColor:             #2e3436
+*cursorColor:           #eeeeec
+*pointerColorBackground:#2e3436
+*pointerColorForeground:#ad7fa8
+
+!! black dark/light
+*color0:                #2e3436
+*color8:                #555753
+
+!! red dark/light
+*color1:                #cc0000
+*color9:                #ef2929
+
+!! green dark/light
+*color2:                #73d216
+*color10:               #8ae234
+
+!! yellow dark/light
+*color3:                #edd400
+*color11:               #fce94f
+
+!! blue dark/light
+*color4:                #3465a4
+*color12:               #729fcf
+
+!! magenta dark/light
+*color5:                #75507b
+*color13:               #ad7fa8
+
+!! cyan dark/light
+*color6:                #06989a
+*color14:               #34e2e2
+
+!! white dark/light
+*color7:                #d3d7cf
+*color15:               #eeeeec
